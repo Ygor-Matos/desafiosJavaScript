@@ -1,9 +1,11 @@
 const colors=['Red','Blue','Yellow','Purple','Green'];
 const btn = document.getElementById('btn');
+const color = document.querySelector('.color');
 
 btn.addEventListener('click', function(){
-    document.body.style.background = colors[randomNumber(colors.length)];
-    console.log(randomNumber(colors.length))
+    let cor=randomNumber();
+    document.body.style.background = colors[cor];
+    document.getElementById('cor').innerHTML = colors[cor];
 });
 
 
